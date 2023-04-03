@@ -1,0 +1,36 @@
+nav{
+    position: fixed;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    
+}
+
+.project-link a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+
+.welcome-section{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.container{
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    align-content: center;
+}
+.image{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+}
