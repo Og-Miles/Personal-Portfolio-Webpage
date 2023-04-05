@@ -1,37 +1,95 @@
-nav{
-    position: fixed;
-}
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
+*{
+    font-family: poppins, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     
 }
 
-.project-link a{
+#navbar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: aliceblue;
+}
+
+#project-link a{
     text-decoration: none;
     color: black;
+    justify-content: space-evenly;
     padding: 5px;
+    margin-right: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
-
-
-.welcome-section{
+#project-link a:hover{
+    background-color: brown;
+    transition: 1.2s ease-in-out;
+}
+#welcome-section{
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     height: 100vh;
     align-items: center;
-    justify-content: center;
-    display: flex;
+    background: linear-gradient(65deg, black, gray )
+}
+#welcome-section h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: aliceblue;
+}
+#welcome-section p{
+    color: aliceblue;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px;
 }
 .container{
-    height: 300px;
     display: flex;
-    justify-content: space-between;
-    margin: 20px;
+    margin: 0 auto;
     align-content: center;
+    justify-content: space-around;
 }
-.image{
-    width: 300px;
-    height: 300px;
-    border: 2px solid black;
-    border-radius: 10px;
+.project-tile{
+    width: 200px;
+    height: 150px;
+    border: 2px solid gray;
+    border-radius: 12px;
+    justify-content: space-between;
+    
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: grey;
+    margin-top: 10px;
+}
+
+#profile-link{
+    display: flex;
+    justify-content: center;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+}
+.socials p{
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+@media screen and(width: 750px) {
+    .socials p{
+        flex-direction: column;
+    }
 }
